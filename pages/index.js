@@ -4,7 +4,7 @@ import {GraphQLClient, gqp} from 'graphql-request';
 
 const graphcms = new GraphQLClient('https://api-ap-southeast-2.hygraph.com/v2/clinteyc30jqt01t77ac126mk/master');
 
-const QUERY = gql `
+const QUERY = gql`
   {
     posts{
       id
@@ -33,6 +33,7 @@ const QUERY = gql `
 `;
 
 export default function Home() {
+  const [post, setPost] = useState([]);
   return (
     <div className={styles.container}>
       <Head>
