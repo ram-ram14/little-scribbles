@@ -4,6 +4,34 @@ import {GraphQLClient, gqp} from 'graphql-request';
 
 const graphcms = new GraphQLClient('https://api-ap-southeast-2.hygraph.com/v2/clinteyc30jqt01t77ac126mk/master');
 
+const QUERY = gql `
+  {
+    posts{
+      id
+      title
+      datePublished
+      slug
+      content {
+        html
+      }
+      autor {
+        name
+        avatar {
+          url
+        }
+      }
+      coverPhoto {
+        publishedAt {
+          createdBy {
+            id
+          }
+          url
+        }
+      }
+    }
+  }
+`;
+
 export default function Home() {
   return (
     <div className={styles.container}>
