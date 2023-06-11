@@ -22,9 +22,7 @@ const QUERY = gql`
         }
       }
       coverPhoto {
-        publishedAt {
           url
-        }
       }
     }
   }
