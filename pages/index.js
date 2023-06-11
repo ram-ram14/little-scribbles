@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {GraphQLClient, gqp} from 'graphql-request';
+import {GraphQLClient, gql} from 'graphql-request';
 
 const graphcms = new GraphQLClient('https://api-ap-southeast-2.hygraph.com/v2/clinteyc30jqt01t77ac126mk/master');
 
@@ -14,7 +14,7 @@ const QUERY = gql`
       content {
         html
       }
-      autor {
+      author {
         name
         avatar {
           url
@@ -38,10 +38,11 @@ export async function getStaticProps() {
     props: {
       posts,
     },
+    revalidate: 10,
   };
 }
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -51,7 +52,9 @@ export default function Home() {
       </Head>
 
       <main className='{styles.main'>
-
+        {posts.map((post) => (
+          <BlogCard />
+        ))}
       </main>
     </div>
   );
