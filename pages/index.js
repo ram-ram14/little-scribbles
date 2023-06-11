@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {GraphQLClient, gql} from 'graphql-request';
+import BlogCard from './components/BlogCard';
 
 const graphcms = new GraphQLClient('https://api-ap-southeast-2.hygraph.com/v2/clinteyc30jqt01t77ac126mk/master');
 
@@ -22,9 +23,6 @@ const QUERY = gql`
       }
       coverPhoto {
         publishedAt {
-          createdBy {
-            id
-          }
           url
         }
       }
