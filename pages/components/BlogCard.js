@@ -9,7 +9,14 @@ export default function BlogPost({title, author, coverPhoto, datePublished, slug
                     <img src={coverPhoto.url} alt="" />
                 </div>
             </Link>
-            <div className={styles.text}></div>
+            <div className={styles.text}>
+                <h2>{title}</h2>
+                <div className={styles.details}>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
