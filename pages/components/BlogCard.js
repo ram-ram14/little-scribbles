@@ -16,6 +16,9 @@ export default function BlogPost({title, author, coverPhoto, datePublished, slug
                         <img src={author.avatar.url} alt='' />
                         <h3>{author.name}</h3>
                     </div>
+                    <div className={styles.date}>
+                        <h3>{datePublished}</h3>
+                    </div>
                 </div>
             </div>
         </div>
