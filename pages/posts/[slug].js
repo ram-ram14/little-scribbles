@@ -46,11 +46,10 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params}) {
     const slug = params.slug;
-  const {posts} = await graphcms.request(QUERY, {slug});
-  const post = data.post;
+  const {post} = await graphcms.request(QUERY, {slug});
   return {
     props: {
-      posts,
+      post,
     },
     revalidate: 10,
   };
@@ -68,6 +67,8 @@ export default function BlogPost({post}){
                 </div>
             </div>
             <h2>{post.title}</h2>
+            <div className={styles.content} dangerouslySetInnerHTML={{__html: post.content.html
+            }}></div>
         </main>
     )
 }
