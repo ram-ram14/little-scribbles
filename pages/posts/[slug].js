@@ -1,4 +1,4 @@
-import styles from '../styles/Slug.module.css';
+import styles from '../../styles/Slug.module.css';
 import {GraphQLClient, gql} from 'graphql-request';
 
 const graphcms = new GraphQLClient('https://api-ap-southeast-2.hygraph.com/v2/clinteyc30jqt01t77ac126mk/master');
@@ -67,6 +67,7 @@ export default function BlogPost({post}){
                     <h6 className={styles.date}>{post.datePublished}</h6>
                 </div>
             </div>
+            <h2>{post.title}</h2>
         </main>
     )
 }
