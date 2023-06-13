@@ -58,6 +58,15 @@ export async function getStaticProps({params}) {
 
 export default function BlogPost({post}){
     return (
-        <main className=''></main>
+        <main className={styles.blog}>
+            <img src={post.coverPhoto.url} className='styles.cover' alt='' />
+            <div className={styles.title}>
+                <img src={post.author.avatar.url} alt='' />
+                <div className={styles.authtext}>
+                    <h6>By {post.author.name}</h6>
+                    <h6 className={styles.date}>{post.datePublished}</h6>
+                </div>
+            </div>
+        </main>
     )
 }
