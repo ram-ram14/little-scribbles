@@ -1,5 +1,7 @@
+/* Import the Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+/* Reset default styles for all elements */
 * {
   padding: 0;
   margin: 0;
@@ -7,61 +9,82 @@
   color: rgb(50, 50, 50);
 }
 
+/* Set styles for the body */
 body {
-  margin: 0% 25%;
-  font-family: 'Roboto', sans-serif;
+  margin: 0% 25%; /* Set left and right margins to 25% of the body width */
+  font-family: 'Roboto', sans-serif; /* Use the Roboto font as the default font */
 }
 
+/* Styles for the navigation */
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
+  display: flex; /* Display the navigation items in a row */
+  align-items: center; /* Center the items vertically */
+  justify-content: center; /* Center the items horizontally */
+  padding: 5rem; /* Add padding to the navigation */
 }
 
+/* Styles for the site title */
+.site-title {
+  font-size: 1.5rem; /* Set the font size for the site title */
+  display: flex; /* Display the title as a flex container */
+  align-items: center; /* Center the title vertically */
+  justify-content: center; /* Center the title horizontally */
+  padding: 3rem; /* Add padding to the title */
+  font-weight: bold; /* Set the font weight to bold */
+  font-family: 'Roboto', sans-serif; /* Use the Roboto font as the default font */
+}
+
+/* Styles for heading level 1 */
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Set the font size for heading level 1 */
 }
 
+/* Styles for heading level 2 */
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Set the font size for heading level 2 */
 }
 
+/* Styles for heading level 3 */
 h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  padding: 1rem 0rem;
-  font-weight: bold;
+  font-size: 1.3rem; /* Set the font size for heading level 3 */
+  font-weight: 500; /* Set the font weight to 500 */
+  padding: 1rem 0rem; /* Add padding to the heading */
+  font-weight: bold; /* Set the font weight to bold */
 }
 
+/* Styles for heading level 6 */
 h6 {
-  font-size: 1rem;
+  font-size: 1rem; /* Set the font size for heading level 6 */
 }
 
+/* Styles for paragraphs and list items */
 p, 
 li {
-  line-height: 1.5rem;
-  font-family: 'Roboto Slab', serif;
-  padding: 1rem 0rem;
-  font-size: 1.1rem;
+  line-height: 1.5rem; /* Set the line height for paragraphs and list items */
+  font-family: 'Roboto Slab', serif; /* Use the Roboto Slab font for paragraphs and list items */
+  padding: 1rem 0rem; /* Add padding to paragraphs and list items */
+  font-size: 1.1rem; /* Set the font size for paragraphs and list items */
 }
 
+/* Styles for ordered and unordered lists */
 ol,
 ul {
-  padding-left: 1.5rem;
+  padding-left: 1.5rem; /* Add left padding to ordered and unordered lists */
 }
 
+/* Styles for links */
 a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 1.5rem; /* Set the font size for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Set the font weight to bold for links */
 }
 
+/* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
   body {
-    margin: 0% 0%;
+    margin: 0% 0%; /* Set left and right margins to 0% of the body width */
   }
   nav {
-    padding: 3rem 0rem;
+    padding: 3rem 0rem; /* Add vertical padding to the navigation */
   }
 }

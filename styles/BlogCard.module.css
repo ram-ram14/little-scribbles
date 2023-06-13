@@ -1,42 +1,43 @@
 .card {
-    margin-top: 5rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.4);
+    margin-top: 5rem; /* Sets the top margin of the card to 5 rem units */
+    border-radius: 2rem; /* Sets the border radius of the card to 2 rem units */
+    overflow: hidden; /* Hides any overflowing content within the card */
+    box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.4); /* Adds a box shadow to the card */
 }
 
 .card h2 {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0rem; /* Sets the padding of the h2 element within the card */
 }
 
 .card h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Sets the font size of the h3 element within the card */
 }
 
 .imgContainer img {
-    position: relative;
-    width: 100%;
-    height: 25vh;
+    position: relative; /* Sets the image position relative to its normal position */
+    width: 100%; /* Sets the width of the image to 100% of its container */
+    max-height: 25vh; /* Sets the maximum height of the image to 25% of the viewport height */
+    object-fit: cover; /* Scales the image to cover the entire container while preserving aspect ratio */
 }
 
 .card img:hover {
-    opacity: 0.8;
+    opacity: 0.8; /* Sets the opacity of the image to 0.8 on hover */
 }
 
 .author {
-    display: flex;
-    align-items: center;
+    display: flex; /* Displays the author element as a flex container */
+    align-items: center; /* Aligns flex items vertically in the center */
 }
 
 .author img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-right: 0.5rem;
+    width: 2rem; /* Sets the width of the author image to 2 rem units */
+    height: 2rem; /* Sets the height of the author image to 2 rem units */
+    border-radius: 50%; /* Rounds the corners of the author image */
+    margin-right: 0.5rem; /* Sets the right margin of the author image to 0.5 rem units */
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        margin: 0rem 2rem;
+        margin: 0rem 2rem; /* Sets the margin of the card to 0 rem on the top and bottom, and 2 rem on the sides */
     }
 }

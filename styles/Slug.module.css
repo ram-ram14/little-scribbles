@@ -1,50 +1,54 @@
 .title {
-    padding-top: 1rem;
+    padding-top: 1rem; /* Adds padding to the top of elements with class "title" */
 }
 
 .title h2 {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem; /* Adds additional padding to the top of <h2> elements within elements with class "title" */
+    padding-bottom: 2rem; /* Adds padding to the bottom of <h2> elements within elements with class "title" */
 }
 
 .authdetails {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /* Displays elements with class "authdetails" as a flexible box */
+    flex-direction: row; /* Sets the direction of flex items within "authdetails" to be horizontal (row) */
+    align-items: center; /* Aligns flex items vertically within "authdetails" to be centered */
 }
 
 .authdetails img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-    object-fit: cover;
+    width: 3rem; /* Sets the width of <img> elements within "authdetails" to 3rem (3 times the font size of the root element) */
+    height: 3rem; /* Sets the height of <img> elements within "authdetails" to 3rem */
+    border-radius: 50%; /* Applies a circular border radius to <img> elements within "authdetails" */
+    margin-right: 1rem; /* Adds a margin to the right side of <img> elements within "authdetails" */
+    object-fit: cover; /* Scales the image to cover the entire container while maintaining aspect ratio */
 }
 
 .authdetails h6 {
-    font-weight: 500;
+    font-weight: 500; /* Sets the font weight of <h6> elements within "authdetails" to 500 */
 }
 
 .authtext {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    display: flex; /* Displays elements with class "authtext" as a flexible box */
+    flex-direction: column; /* Sets the direction of flex items within "authtext" to be vertical (column) */
+    align-items: left; /* Aligns flex items horizontally within "authtext" to be left-aligned */
 }
 
 .cover {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
+    width: 100%; /* Sets the width of elements with class "cover" to 100% of their parent container */
+    height: 30vh; /* Sets the height of elements with class "cover" to 30% of the viewport height */
+    object-fit: cover; /* Scales the image within the container while maintaining aspect ratio */
 }
 
 @media screen and (max-width: 768px) {
+    /* Media query that applies styles only when the screen width is 768px or less */
+
     .blog {
-        margin: 0rem 2rem;
+        margin: 0rem 2rem; /* Adds margin to the left and right sides of elements with class "blog" */
     }
+
     .content {
-        width: 100%
+        width: 100%; /* Sets the width of elements with class "content" to 100% of their parent container */
     }
+
     .content img {
-        width: 100%;
+        width: 100%; /* Sets the width of <img> elements within elements with class "content" to 100% */
     }
 }
